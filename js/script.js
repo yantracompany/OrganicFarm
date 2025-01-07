@@ -142,3 +142,65 @@ mybutton.addEventListener("click",function(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+
+// Get form elements
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const messageInput = document.getElementById('message');
+const sendButton = document.getElementById('sendButton');
+
+// Function to validate form fields
+function validateForm() {
+    const isPhoneValid = phoneInput.value.trim().length > 0;
+    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
+    const isNameValid = nameInput.value.trim().length > 0;
+
+    if (isEmailValid) {
+        sendButton.classList.remove('inactive', 'btn');
+        sendButton.classList.add('btn-primary');
+        sendButton.removeAttribute('disabled'); // Enable the button
+    } else {
+        sendButton.classList.remove('btn-primary');
+        sendButton.classList.add('inactive', 'btn');
+        sendButton.setAttribute('disabled', true); // Disable the button
+    }
+}
+
+function clearForm() {
+    nameInput.value = '';
+    emailInput.value = '';
+    phoneInput.value = '';
+    messageInput.value = '';
+    validateForm();
+}
+
+// Validate form fields on input
+[nameInput, emailInput, phoneInput].forEach(input => input.addEventListener('input', validateForm));
+
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const formData = {
+        to_name: 'yantra world',
+        from_name: nameInput.value || 'Anonymous',
+        phone_number: phoneInput.value,
+        emailInput: emailInput.value,
+        message: messageInput.value || 'Details btayi nhi inhone.',
+    };
+
+    console.log("Form Data:", formData); // For debugging
+
+    emailjs.init('agTctjTFOnEnXcgOK');
+
+    emailjs.send('service_0kvs63g', 'template_d0mho5f', formData).then(
+        function (response) {
+            alert('Thanks for informing! We will get in touch with you shortly.');
+            clearForm();
+        },
+        function (err) {
+            console.error('FAILED...', err);
+        }
+    );
+});

@@ -701,7 +701,7 @@
                         <i class="bi bi-send-fill"></i>
                     </div>
                     <div class="col-11">
-                        <p>business@yantraworld.in</p>
+                        <p>infoandsales@yantraworld.in</p>
                     </div>
                 </div>
                 <div class="row justify-content-evenly">
@@ -715,25 +715,26 @@
             </div>
             <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
                 <div class="contact-form">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Mobile No." />
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
-                            rows="5"></textarea>
-                    </div>
-                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-                        Submit
-                    </button>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" required placeholder="E-mail *" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="phone" placeholder="Mobile No." />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" id="sendButton" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill inactive btn" disabled>
+                            Submit
+                        </button>
+                    </form>
                 </div>
             </div>
+                        
         </div>
     </section>
     <!-- contact section ends here -->
@@ -774,23 +775,17 @@
 
         <p>Copyright 2025 Yantra World | All Rights Reserved.</p>
     </footer>
-    <!-- footer section ends here -->
-
-    <!-- bootstrap javascript cdn link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-    <!-- AOS library javascript link  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // initializing AOS library
         AOS.init({
             duration: 1000,
             offset: 50,
         });
     </script>
-    <!-- custom js file linking -->
     <script src="js/script.js"></script>
 
 </body>

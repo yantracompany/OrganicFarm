@@ -1239,3 +1239,6 @@ footer .copyright {
 .ht-130{
     height: 130px !important;
 }
+#sendButton{
+    border: 1px solid black;
+}
