@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
     <title>Yantra World</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
 
@@ -34,515 +36,537 @@
 </head>
 
 <body>
-    <!-- navbar starts -->
-    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container-fluid px-5">
-            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Artificial intelligence</a>
-            <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="bi bi-menu-button-fill"></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#product">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimonials</a>
-                    </li>
-                    <!-- <li class="nav-item">
+
+    <div class="container-fluid">
+
+        <!-- navbar starts -->
+        <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Artificial intelligence</a>
+                <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-menu-button-fill"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Testimonials</a>
+                        </li>
+                        <!-- <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
                     </li> -->
-                </ul>
+                    </ul>
+                </div>
+                <a href="contact"
+                    class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block text-decoration-none">Contact</a>
             </div>
-            <a href="contact"
-                class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block text-decoration-none">Contact</a>
-        </div>
-    </nav>
-    <!-- navbar ends here -->
+        </nav>
+        <!-- navbar ends here -->
 
-    <!-- home section starts  -->
-    <section class="home pt-5 pb-5" id="home">
-        <div class="row justify-content-evenly align-middle">
-            <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-                <h2 style="color: #3f396d">
-                    Powering the Future with <br /><span class="c-orange">GenAI Products</span>
-                </h2>
-                <p class="text-muted">
-                    We specialize in <strong>GenAI Products</strong> using cutting-edge technologies like
-                    <strong>LLMs</strong> (Hugging Face, OpenAI GPT) and frameworks like Python, React, and Angular.
-                    Let’s create scalable, responsive, and innovative AI-powered products.
-                </p>
+        <!-- home section starts  -->
+        <section class="home pt-5 pb-5" id="home">
+            <div class="row justify-content-evenly align-middle">
+                <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+                    <h2 style="color: #3f396d">
+                        Powering the Future with <br /><span class="c-orange">GenAI Products</span>
+                    </h2>
+                    <p class="text-muted">
+                        We specialize in <strong>GenAI Products</strong> using cutting-edge technologies like
+                        <strong>LLMs</strong> (Hugging Face, OpenAI GPT) and frameworks like Python, React, and Angular.
+                        Let’s create scalable, responsive, and innovative AI-powered products.
+                    </p>
+                </div>
+                <div class="col-10 col-md-4 d-none d-md-block">
+                    <img src="images/banner1.jpg" class="img-fluid" alt="AI products banner" />
+                </div>
             </div>
-            <div class="col-10 col-md-4 d-none d-md-block">
-                <img src="images/banner1.jpg" class="img-fluid" alt="AI products banner" />
+        </section>
+
+
+        <!-- home section ends here -->
+
+        <section class="portfolio" id="portfolio">
+            <div class="heading text-center pt-5">
+                <h3>Explore Our Products</h3>
             </div>
-        </div>
-    </section>
-
-
-    <!-- home section ends here -->
-
-    <section class="portfolio" id="portfolio">
-        <div class="heading text-center pt-5">
-            <h3>Explore Our Products</h3>
-        </div>
-        <div id="myBtnContainer" class="text-center mt-4">
-            <!-- Custom filtering for showcasing our expertise -->
-            <button class="filter-item" data-filter="all">All</button>
-            <button class="filter-item" data-filter="agentic">Agentic Products</button>
-            <button class="filter-item" data-filter="chatbot">Chatbot Innovations</button>
-            <button class="filter-item" data-filter="clone">Digital Clone</button>
-            <button class="filter-item" data-filter="avatar">Video Avatar</button>
-        </div>
-        <div class="portfolio-body">
-            <div class="row justify-content-evenly px-4">
+            <div id="myBtnContainer" class="text-center mt-4">
+                <!-- Custom filtering for showcasing our expertise -->
+                <button class="filter-item" data-filter="all">All</button>
+                <button class="filter-item" data-filter="agentic">Agentic Products</button>
+                <button class="filter-item" data-filter="chatbot">Chatbot Innovations</button>
+                <button class="filter-item" data-filter="clone">Digital Clone</button>
+                <button class="filter-item" data-filter="avatar">Video Avatar</button>
+            </div>
+            <div class="portfolio-body">
+                <div class="row justify-content-evenly px-4">
+                    <!-- Agentic BOT -->
+                    <div class="post col-md-4 agentic all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                        <div class="card">
+                            <img src="images/agentic-rag.png" class="card-img-top" alt="Agentic BOT Products" />
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Agentic BOT with Insurance & Sales</h4>
+                                <span class="badge bg-secondary badge-pill">AI</span>
+                                <span class="badge bg-secondary badge-pill">Sales Automation</span>
+                                <span class="badge bg-secondary badge-pill mb-2">Employee Management</span><br />
+                                <p>Redefine enterprise efficiency with our hyper-intelligent Agentic BOT—designed to
+                                    manage
+                                    insurance workflows, boost sales pipelines, and streamline employee operations with
+                                    unmatched precision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chatbot Innovations -->
+                    <div class="post col-md-4 chatbot all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                        <div class="card">
+                            <img src="images/llm-powered-products.png" class="card-img-top" alt="Chatbot Innovation" />
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Chatbots Powered by OpenAI LLMs</h4>
+                                <span class="badge bg-secondary badge-pill">Generative AI</span>
+                                <span class="badge bg-secondary badge-pill">OpenAI</span>
+                                <span class="badge bg-secondary badge-pill mb-2">LLM</span><br />
+                                <p>Experience cutting-edge chatbot technology with advanced OpenAI LLM integration,
+                                    delivering top-tier conversational intelligence, real-time adaptability, and
+                                    unparalleled user satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Digital Clone -->
+                    <div class="post col-md-4 clone all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                        <div class="card">
+                            <img src="images/clone.jpg" class="card-img-top" alt="Digital Clone" />
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Your Digital Clone: Voice & Video</h4>
+                                <span class="badge bg-secondary badge-pill">AI</span>
+                                <span class="badge bg-secondary badge-pill">Voice Cloning</span>
+                                <span class="badge bg-secondary badge-pill mb-2">Video Cloning</span><br />
+                                <p>Create your own digital twin with advanced AI-powered voice and video cloning. From
+                                    professional avatars to personal branding, the possibilities are limitless.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly mt-4 px-4">
+                    <!-- Video Avatar -->
+                    <div class="post col-md-4 avatar all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                        <div class="card">
+                            <img src="images/video-avatar.png" class="card-img-top" alt="Video Avatar Creation" />
+                            <div class="card-body text-center">
+                                <h4 class="card-title">AI-Powered Video Avatars</h4>
+                                <span class="badge bg-secondary badge-pill">AI</span>
+                                <span class="badge bg-secondary badge-pill">Video Avatars</span>
+                                <span class="badge bg-secondary badge-pill mb-2">Personalization</span><br />
+                                <p>Revolutionize interaction with dynamic video avatars, enabling lifelike digital
+                                    representations for virtual meetings, content creation, and immersive experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Live Streaming -->
+                    <div class="post col-md-4 avatar all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                        <div class="card">
+                            <img src="images/low-latency-network.png" class="card-img-top"
+                                alt="Live Streaming Products" />
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Live Streaming at Low Latency</h4>
+                                <span class="badge bg-secondary badge-pill">Real-Time</span>
+                                <span class="badge bg-secondary badge-pill">Audio/Video</span>
+                                <span class="badge bg-secondary badge-pill mb-2">Low Latency</span><br />
+                                <p>Deliver high-definition audio, video, and text streams with our state-of-the-art live
+                                    streaming products, optimized for unparalleled speed and minimal latency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- expertise section starts -->
+        <section class="expertise mt-5" id="product">
+            <div class="heading text-center">
+                <h3>
+                    Revolutionizing Industries with <br />
+                    Advanced Digital Products
+                </h3>
+            </div>
+            <div class="row justify-content-evenly mt-5">
                 <!-- Agentic BOT -->
-                <div class="post col-md-4 agentic all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                    <div class="card">
-                        <img src="images/agentic-rag.png" class="card-img-top" alt="Agentic BOT Products" />
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Agentic BOT with Insurance & Sales</h4>
-                            <span class="badge bg-secondary badge-pill">AI</span>
-                            <span class="badge bg-secondary badge-pill">Sales Automation</span>
-                            <span class="badge bg-secondary badge-pill mb-2">Employee Management</span><br />
-                            <p>Redefine enterprise efficiency with our hyper-intelligent Agentic BOT—designed to manage
-                                insurance workflows, boost sales pipelines, and streamline employee operations with
-                                unmatched precision.</p>
+                <div class="col-10 col-md-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="img">
+                            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="Agentic BOT" />
+                        </div>
+                        <div class="content mt-3">
+                            <h4>Agentic BOT for Insurance, Sales & Workforce Management</h4>
+                            <p class="text-muted">
+                                Experience the next level of automation with our Agentic BOTs designed for
+                                precision-driven
+                                insurance operations, dynamic sales performance tracking, and comprehensive employee
+                                management products. Leveraging state-of-the-art AI, these BOTs streamline processes
+                                like never before.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!-- Chatbot Innovations -->
-                <div class="post col-md-4 chatbot all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                    <div class="card">
-                        <img src="images/llm-powered-products.png" class="card-img-top" alt="Chatbot Innovation" />
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Chatbots Powered by OpenAI LLMs</h4>
-                            <span class="badge bg-secondary badge-pill">Generative AI</span>
-                            <span class="badge bg-secondary badge-pill">OpenAI</span>
-                            <span class="badge bg-secondary badge-pill mb-2">LLM</span><br />
-                            <p>Experience cutting-edge chatbot technology with advanced OpenAI LLM integration,
-                                delivering top-tier conversational intelligence, real-time adaptability, and
-                                unparalleled user satisfaction.</p>
+                <!-- OpenAI LLM-based Chatbots -->
+                <div class="col-md-4 col-10" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="img">
+                            <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="LLM Chatbots" />
+                        </div>
+                        <div class="content mt-3">
+                            <h4>OpenAI LLM-Powered Chatbots</h4>
+                            <p class="text-muted">
+                                Unleash the full potential of conversational AI with our OpenAI-based LLM chatbots,
+                                including
+                                top-tier examples like GPT-4. Our products redefine customer engagement and support
+                                automation,
+                                delivering unparalleled accuracy, adaptability, and human-like interaction.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!-- Digital Clone -->
-                <div class="post col-md-4 clone all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                    <div class="card">
-                        <img src="images/clone.jpg" class="card-img-top" alt="Digital Clone" />
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Your Digital Clone: Voice & Video</h4>
-                            <span class="badge bg-secondary badge-pill">AI</span>
-                            <span class="badge bg-secondary badge-pill">Voice Cloning</span>
-                            <span class="badge bg-secondary badge-pill mb-2">Video Cloning</span><br />
-                            <p>Create your own digital twin with advanced AI-powered voice and video cloning. From
-                                professional avatars to personal branding, the possibilities are limitless.</p>
+                <!-- Digital Cloning -->
+                <div class="col-md-4 col-10" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="img">
+                            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="Digital Clone" />
+                        </div>
+                        <div class="content mt-3">
+                            <h4>Create Your Digital Clone</h4>
+                            <p class="text-muted">
+                                Transform your digital presence with our cutting-edge technology for voice and video
+                                cloning.
+                                Build an AI-powered digital twin that replicates your persona, offering seamless
+                                interaction
+                                across voice, video, and text-based mediums.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-evenly mt-4 px-4">
-                <!-- Video Avatar -->
-                <div class="post col-md-4 avatar all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                    <div class="card">
-                        <img src="images/video-avatar.png" class="card-img-top" alt="Video Avatar Creation" />
-                        <div class="card-body text-center">
-                            <h4 class="card-title">AI-Powered Video Avatars</h4>
-                            <span class="badge bg-secondary badge-pill">AI</span>
-                            <span class="badge bg-secondary badge-pill">Video Avatars</span>
-                            <span class="badge bg-secondary badge-pill mb-2">Personalization</span><br />
-                            <p>Revolutionize interaction with dynamic video avatars, enabling lifelike digital
-                                representations for virtual meetings, content creation, and immersive experiences.</p>
+                <!-- Video Avatar Creation -->
+                <div class="col-md-4 col-10 mt-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="img">
+                            <img src="images/service-icon4.png" class="w-25 img-fluid img" alt="Video Avatar" />
+                        </div>
+                        <div class="content mt-3">
+                            <h4>Dynamic Video Avatar Creation</h4>
+                            <p class="text-muted">
+                                Step into the future with hyper-realistic video avatars of yourself. Perfect for
+                                personal
+                                branding,
+                                customer interaction, and immersive digital experiences. Powered by advanced AI to
+                                mirror
+                                your
+                                movements, expressions, and voice in stunning detail.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <!-- Live Streaming -->
-                <div class="post col-md-4 avatar all col-10 mt-3 mt-md-0" data-aos="fade-up">
-                    <div class="card">
-                        <img src="images/low-latency-network.png" class="card-img-top" alt="Live Streaming Products" />
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Live Streaming at Low Latency</h4>
-                            <span class="badge bg-secondary badge-pill">Real-Time</span>
-                            <span class="badge bg-secondary badge-pill">Audio/Video</span>
-                            <span class="badge bg-secondary badge-pill mb-2">Low Latency</span><br />
-                            <p>Deliver high-definition audio, video, and text streams with our state-of-the-art live
-                                streaming products, optimized for unparalleled speed and minimal latency.</p>
+                <div class="col-md-4 col-10 mt-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="img">
+                            <img src="images/service-icon4.png" class="w-25 img-fluid img" alt="Live Streaming" />
+                        </div>
+                        <div class="content mt-3">
+                            <h4>Ultra-Low Latency Live Streaming APIs (Contact US)</h4>
+                            <p class="text-muted">
+                                Redefine live interactions with our ultra-low latency audio, video, and text streaming
+                                technology.
+                                From corporate webinars to interactive events, our platform ensures real-time engagement
+                                with
+                                unparalleled speed and reliability.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <hr>
-    <!-- expertise section starts -->
-    <section class="expertise mt-5" id="product">
-        <div class="heading text-center">
-            <h3>
-                Revolutionizing Industries with <br />
-                Advanced Digital Products
-            </h3>
-        </div>
-        <div class="row justify-content-evenly mt-5">
-            <!-- Agentic BOT -->
-            <div class="col-10 col-md-4" data-aos="fade-up">
-                <div class="service-card">
-                    <div class="img">
-                        <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="Agentic BOT" />
-                    </div>
-                    <div class="content mt-3">
-                        <h4>Agentic BOT for Insurance, Sales & Workforce Management</h4>
-                        <p class="text-muted">
-                            Experience the next level of automation with our Agentic BOTs designed for precision-driven
-                            insurance operations, dynamic sales performance tracking, and comprehensive employee
-                            management products. Leveraging state-of-the-art AI, these BOTs streamline processes
-                            like never before.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- OpenAI LLM-based Chatbots -->
-            <div class="col-md-4 col-10" data-aos="fade-up">
-                <div class="service-card">
-                    <div class="img">
-                        <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="LLM Chatbots" />
-                    </div>
-                    <div class="content mt-3">
-                        <h4>OpenAI LLM-Powered Chatbots</h4>
-                        <p class="text-muted">
-                            Unleash the full potential of conversational AI with our OpenAI-based LLM chatbots,
-                            including
-                            top-tier examples like GPT-4. Our products redefine customer engagement and support
-                            automation,
-                            delivering unparalleled accuracy, adaptability, and human-like interaction.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Digital Cloning -->
-            <div class="col-md-4 col-10" data-aos="fade-up">
-                <div class="service-card">
-                    <div class="img">
-                        <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="Digital Clone" />
-                    </div>
-                    <div class="content mt-3">
-                        <h4>Create Your Digital Clone</h4>
-                        <p class="text-muted">
-                            Transform your digital presence with our cutting-edge technology for voice and video
-                            cloning.
-                            Build an AI-powered digital twin that replicates your persona, offering seamless interaction
-                            across voice, video, and text-based mediums.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Video Avatar Creation -->
-            <div class="col-md-4 col-10 mt-4" data-aos="fade-up">
-                <div class="service-card">
-                    <div class="img">
-                        <img src="images/service-icon4.png" class="w-25 img-fluid img" alt="Video Avatar" />
-                    </div>
-                    <div class="content mt-3">
-                        <h4>Dynamic Video Avatar Creation</h4>
-                        <p class="text-muted">
-                            Step into the future with hyper-realistic video avatars of yourself. Perfect for personal
-                            branding,
-                            customer interaction, and immersive digital experiences. Powered by advanced AI to mirror
-                            your
-                            movements, expressions, and voice in stunning detail.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Live Streaming -->
-            <div class="col-md-4 col-10 mt-4" data-aos="fade-up">
-                <div class="service-card">
-                    <div class="img">
-                        <img src="images/service-icon4.png" class="w-25 img-fluid img" alt="Live Streaming" />
-                    </div>
-                    <div class="content mt-3">
-                        <h4>Ultra-Low Latency Live Streaming APIs (Contact US)</h4>
-                        <p class="text-muted">
-                            Redefine live interactions with our ultra-low latency audio, video, and text streaming
-                            technology.
-                            From corporate webinars to interactive events, our platform ensures real-time engagement
-                            with
-                            unparalleled speed and reliability.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- expertise section ends here -->
+        <!-- expertise section ends here -->
 
-    <!-- skill section starts -->
-    <section class="skill mt-5 py-5" id="skills">
-        <div class="row justify-content-evenly">
-            <!-- Skill Cards -->
-            <div class="col-10 col-md-6 skill-with-background" data-aos="slide-right">
-                <div class="row justify-content-evenly">
-                    <!-- Skill 1: OpenAI -->
-                    <div class="col-10 col-md-6 mb-4 text-center">
-                        <img class="img-fluid rounded-5 ht-130" src="images/openai.png" alt="OpenAI" />
-                        <h5 class="mt-3">OpenAI</h5>
-                    </div>
-                    <!-- Skill 2: Hugging Face -->
-                    <div class="col-10 col-md-6 mb-4 text-center">
-                        <img class="img-fluid rounded-5 ht-130" src="images/langchain.png" alt="LangChain" />
-                        <h5 class="mt-3">LangChain</h5>
-                    </div>
-                </div>
-                <div class="row justify-content-evenly">
-                    <!-- Skill 3: Cloud Products -->
-                    <div class="col-10 col-md-6 mb-4 text-center">
-                        <img class="img-fluid rounded-5 ht-130" src="images/cloud.png" alt="Cloud" />
-                        <h5 class="mt-3">Cloud Products</h5>
-                    </div>
-                    <!-- Skill 4: Large Language Models -->
-                    <div class="col-10 col-md-6 mb-4 text-center">
-                        <img class="img-fluid rounded-5 ht-130" src="images/llm.jpg" alt="LLMs" />
-                        <h5 class="mt-3">Large Language Models</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Detail Section -->
-            <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-                <div class="heading mt-5 mt-md-3">
-                    <small>Our Offerings</small>
-                    <h3>Plug-and-Play AI Products</h3>
-                    <p class="text-muted">
-                        Unlock the power of AI with our pre-built APIs and tools. From OpenAI's GPT models to LangChain
-                        frameworks and cloud integrations, we have products tailored to your needs.
-                    </p>
-                    <p class="text-muted">
-                        Simplify your workflow with our ready-to-deploy tech, designed for seamless API integration into
-                        your website or app.
-                    </p>
-                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-                        <a href="#contact" style="text-decoration: none; color: #fff;">Contact Us for Integration</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- skill section end here -->
-
-    <!-- testimonial section starts  -->
-    <section class="testimonial mt-5 pt-5" id="testimonial">
-        <div class="row justify-content-evenly">
-            <div class="col-md-4 col-10" data-aos="slide-right">
-                <img src="images/tastimonials-img.png" class="img-fluid rounded-5" alt="Testimonials" />
-            </div>
-            <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
-                <div class="heading">
-                    <small>Testimonials</small>
-                    <h3>Happy Clients Feedback</h3>
-                    <!-- Bootstrap Carousel -->
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <!-- Testimonial 1: USA -->
-                            <div class="carousel-item active">
-                                <div class="row justify-content-evenly">
-                                    <div class="col-2 text-center">
-                                        <i class="bi bi-quote"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <p class="text-muted">
-                                            "The integration of AI APIs into our system was seamless! The team’s
-                                            expertise and professionalism exceeded our expectations, delivering scalable
-                                            solutions for our e-commerce platform."
-                                        </p>
-                                        <h4>Michael Johnson</h4>
-                                        <small class="fs-6 text-muted">CTO, Silicon Valley Startup (USA)</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial 2: UAE (Dubai) -->
-                            <div class="carousel-item">
-                                <div class="row justify-content-evenly">
-                                    <div class="col-2 text-center">
-                                        <i class="bi bi-quote"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <p class="text-muted">
-                                            "Their plug-and-play AI solutions are simply amazing! Within days, we had a
-                                            fully functional chatbot integrated into our banking app. Highly recommended
-                                            for fast and reliable service."
-                                        </p>
-                                        <h4>Fatima Al Rashid</h4>
-                                        <small class="fs-6 text-muted">Director, FinTech Dubai (UAE)</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial 3: UK -->
-                            <div class="carousel-item">
-                                <div class="row justify-content-evenly">
-                                    <div class="col-2 text-center">
-                                        <i class="bi bi-quote"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <p class="text-muted">
-                                            "Working with this team has been an absolute pleasure. Their ready-to-deploy
-                                            AI solutions have streamlined our processes and brought efficiency to our
-                                            retail operations."
-                                        </p>
-                                        <h4>Elizabeth Harper</h4>
-                                        <small class="fs-6 text-muted">Head of Innovation, London Retail Group
-                                            (UK)</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial 4: India -->
-                            <div class="carousel-item">
-                                <div class="row justify-content-evenly">
-                                    <div class="col-2 text-center">
-                                        <i class="bi bi-quote"></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <p class="text-muted">
-                                            "Their products have been a game-changer for our ed-tech platform. From API
-                                            integration to deployment, the process was smooth and hassle-free. Truly a
-                                            fantastic experience!"
-                                        </p>
-                                        <h4>Rahul Sharma</h4>
-                                        <small class="fs-6 text-muted">Founder, EdTech Innovators (India)</small>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- skill section starts -->
+        <section class="skill mt-5 py-5" id="skills">
+            <div class="row justify-content-evenly">
+                <!-- Skill Cards -->
+                <div class="col-10 col-md-6 skill-with-background" data-aos="slide-right">
+                    <div class="row justify-content-evenly">
+                        <!-- Skill 1: OpenAI -->
+                        <div class="col-10 col-md-6 mb-4 text-center">
+                            <img class="img-fluid rounded-5 ht-130" src="images/openai.png" alt="OpenAI" />
+                            <h5 class="mt-3">OpenAI</h5>
                         </div>
-                        <!-- Carousel Controls -->
-                        <button class="nextprev-btn rounded-pill prev-btn" type="button"
-                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <i class="bi bi-arrow-left-circle-fill prev"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="nextprev-btn rounded-pill next-btn" type="button"
-                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <i class="bi bi-arrow-right-circle-fill next"></i>
-                            <span class="visually-hidden">Next</span>
+                        <!-- Skill 2: Hugging Face -->
+                        <div class="col-10 col-md-6 mb-4 text-center">
+                            <img class="img-fluid rounded-5 ht-130" src="images/langchain.png" alt="LangChain" />
+                            <h5 class="mt-3">LangChain</h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <!-- Skill 3: Cloud Products -->
+                        <div class="col-10 col-md-6 mb-4 text-center">
+                            <img class="img-fluid rounded-5 ht-130" src="images/cloud.png" alt="Cloud" />
+                            <h5 class="mt-3">Cloud Products</h5>
+                        </div>
+                        <!-- Skill 4: Large Language Models -->
+                        <div class="col-10 col-md-6 mb-4 text-center">
+                            <img class="img-fluid rounded-5 ht-130" src="images/llm.jpg" alt="LLMs" />
+                            <h5 class="mt-3">Large Language Models</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail Section -->
+                <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+                    <div class="heading mt-5 mt-md-3">
+                        <small>Our Offerings</small>
+                        <h3>Plug-and-Play AI Products</h3>
+                        <p class="text-muted">
+                            Unlock the power of AI with our pre-built APIs and tools. From OpenAI's GPT models to
+                            LangChain
+                            frameworks and cloud integrations, we have products tailored to your needs.
+                        </p>
+                        <p class="text-muted">
+                            Simplify your workflow with our ready-to-deploy tech, designed for seamless API integration
+                            into
+                            your website or app.
+                        </p>
+                        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                            <a href="#contact" style="text-decoration: none; color: #fff;">Contact Us for
+                                Integration</a>
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- skill section end here -->
 
-    <!-- testimonial ends here -->
-
-    <!-- contact section starts -->
-    <section class="contact py-5" id="contact">
-        <div class="heading text-center">
-            <small>Get in Touch</small>
-            <h3>Any Questions? Feel Free to Contact</h3>
-        </div>
-        <div class="row justify-content-evenly mt-5">
-            <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
-                <div class="row justify-content-evenly">
-                    <div class="col-1">
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </div>
-                    <div class="col-11">
-                        <p>121 Udhyog Vihar, Phase-v, Gurugram, Haryana 122002</p>
-                    </div>
+        <!-- testimonial section starts  -->
+        <section class="testimonial mt-5 pt-5" id="testimonial">
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 col-10" data-aos="slide-right">
+                    <img src="images/tastimonials-img.png" class="img-fluid rounded-5" alt="Testimonials" />
                 </div>
-                <div class="row justify-content-evenly">
-                    <div class="col-1">
-                        <i class="bi bi-telephone-fill"></i>
-                    </div>
-                    <div class="col-11">
-                        <p>+91 8368459014</p>
-                    </div>
-                </div>
-                <div class="row justify-content-evenly">
-                    <div class="col-1">
-                        <i class="bi bi-send-fill"></i>
-                    </div>
-                    <div class="col-11">
-                        <p>infoandsales@yantraworld.in</p>
-                    </div>
-                </div>
-                <div class="row justify-content-evenly">
-                    <div class="col-1">
-                        <i class="bi bi-globe-americas"></i>
-                    </div>
-                    <div class="col-11">
-                        <p>yantraworld.in</p>
+                <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+                    <div class="heading">
+                        <small>Testimonials</small>
+                        <h3>Happy Clients Feedback</h3>
+                        <!-- Bootstrap Carousel -->
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Testimonial 1: USA -->
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-2 text-center">
+                                            <i class="bi bi-quote"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="text-muted">
+                                                "The integration of AI APIs into our system was seamless! The team’s
+                                                expertise and professionalism exceeded our expectations, delivering
+                                                scalable
+                                                solutions for our e-commerce platform."
+                                            </p>
+                                            <h4>Michael Johnson</h4>
+                                            <small class="fs-6 text-muted">CTO, Silicon Valley Startup (USA)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial 2: UAE (Dubai) -->
+                                <div class="carousel-item">
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-2 text-center">
+                                            <i class="bi bi-quote"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="text-muted">
+                                                "Their plug-and-play AI solutions are simply amazing! Within days, we
+                                                had a
+                                                fully functional chatbot integrated into our banking app. Highly
+                                                recommended
+                                                for fast and reliable service."
+                                            </p>
+                                            <h4>Fatima Al Rashid</h4>
+                                            <small class="fs-6 text-muted">Director, FinTech Dubai (UAE)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial 3: UK -->
+                                <div class="carousel-item">
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-2 text-center">
+                                            <i class="bi bi-quote"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="text-muted">
+                                                "Working with this team has been an absolute pleasure. Their
+                                                ready-to-deploy
+                                                AI solutions have streamlined our processes and brought efficiency to
+                                                our
+                                                retail operations."
+                                            </p>
+                                            <h4>Elizabeth Harper</h4>
+                                            <small class="fs-6 text-muted">Head of Innovation, London Retail Group
+                                                (UK)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial 4: India -->
+                                <div class="carousel-item">
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-2 text-center">
+                                            <i class="bi bi-quote"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="text-muted">
+                                                "Their products have been a game-changer for our ed-tech platform. From
+                                                API
+                                                integration to deployment, the process was smooth and hassle-free. Truly
+                                                a
+                                                fantastic experience!"
+                                            </p>
+                                            <h4>Rahul Sharma</h4>
+                                            <small class="fs-6 text-muted">Founder, EdTech Innovators (India)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel Controls -->
+                            <button class="nextprev-btn rounded-pill prev-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="nextprev-btn rounded-pill next-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <i class="bi bi-arrow-right-circle-fill next"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="name" placeholder="Name" />
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="email" required placeholder="E-mail *" />
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="phone" placeholder="Mobile No." />
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
-                        </div>
-                        <button type="submit" id="sendButton"
-                            class="c-btn h-btn mt-3 py-3 px-5 rounded-pill inactive btn bg-primary" disabled>
-                            Submit
-                        </button>
-                    </form>
-                </div>
+        </section>
+
+        <!-- testimonial ends here -->
+
+        <!-- contact section starts -->
+        <section class="contact py-5" id="contact">
+            <div class="heading text-center">
+                <small>Get in Touch</small>
+                <h3>Any Questions? Feel Free to Contact</h3>
             </div>
+            <div class="row justify-content-evenly mt-5">
+                <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+                    <div class="row justify-content-evenly">
+                        <div class="col-1">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>121 Udhyog Vihar, Phase-v, Gurugram, Haryana 122002</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-1">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>+91 8368459014</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-1">
+                            <i class="bi bi-send-fill"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>infoandsales@yantraworld.in</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-1">
+                            <i class="bi bi-globe-americas"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>yantraworld.in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Name" />
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" required placeholder="E-mail *" />
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="phone" placeholder="Mobile No." />
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" id="sendButton"
+                                class="c-btn h-btn mt-3 py-3 px-5 rounded-pill inactive btn bg-primary" disabled>
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
 
-        </div>
-    </section>
-    <!-- contact section ends here -->
-    <button type="button" class="btn btn-lg btn-floating rounded-pill text-white bg-black cursor-pointer" id="btn-back-to-top" aria-label="Scroll to top">
-        <i class="bi bi-arrow-up"></i>
-    </button>
-    
-    <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-        <h3 class="text-white pt-4" data-aos="fade-up">GenAI</h3>
-        <div class="link-group mt-5" data-aos="fade-up">
-            <a href="#home">Home</a>
-            <div class="vr"></div>
-            <a href="#about">About</a>
-            <div class="vr"></div>
-            <a href="#product">Product</a>
-            <div class="vr"></div>
-            <a href="#portfolio">Portfolio</a>
-            <div class="vr"></div>
-            <!-- <a href="#blog">Blog</a> -->
-            <div class="vr"></div>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="social-links mt-5" data-aos="fade-up">
-            <button href="" class="rounded-pill dribble">
-                <i class="bi bi-dribbble"></i>
-            </button>
-            <button href="" class="rounded-pill whatsapp">
-                <i class="bi bi-whatsapp"></i>
-            </button>
-            <button href="" class="rounded-pill behance">
-                <i class="bi bi-behance"></i>
-            </button>
-        </div>
-        <hr class="text-muted my-4" />
+            </div>
+        </section>
+        <!-- contact section ends here -->
+        <button type="button" class="btn btn-lg btn-floating rounded-pill text-white bg-black cursor-pointer"
+            id="btn-back-to-top" aria-label="Scroll to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
 
-        <p>Copyright 2025 Yantra World | All Rights Reserved.</p>
-    </footer>
+        <!-- footer section starts  -->
+        <footer class="text-center text-muted py-4">
+            <h3 class="text-white pt-4" data-aos="fade-up">GenAI</h3>
+            <div class="link-group mt-5" data-aos="fade-up">
+                <a href="#home">Home</a>
+                <div class="vr"></div>
+                <a href="#about">About</a>
+                <div class="vr"></div>
+                <a href="#product">Product</a>
+                <div class="vr"></div>
+                <a href="#portfolio">Portfolio</a>
+                <div class="vr"></div>
+                <!-- <a href="#blog">Blog</a> -->
+                <div class="vr"></div>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-links mt-5" data-aos="fade-up">
+                <button href="" class="rounded-pill dribble">
+                    <i class="bi bi-dribbble"></i>
+                </button>
+                <button href="" class="rounded-pill whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                </button>
+                <button href="" class="rounded-pill behance">
+                    <i class="bi bi-behance"></i>
+                </button>
+            </div>
+            <hr class="text-muted my-4" />
+
+            <p>Copyright 2025 Yantra World | All Rights Reserved.</p>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
